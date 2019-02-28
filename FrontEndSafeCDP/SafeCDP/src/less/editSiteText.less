@@ -1,0 +1,106 @@
+.editSiteText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &_title {
+        width: 100%;
+    }
+
+    &_selections {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background: rgba(@clr-white, 0.2);
+
+        &_option {
+            flex-grow: 1;
+            padding: 1rem 0.75rem;
+            cursor: pointer;
+            user-select: none;
+
+            &:hover {
+                background: rgba(@clr-white, 0.1);
+            }
+
+            &-active {
+                background: rgba(@clr-white, 0.2);
+
+                &:hover {
+                    background: rgba(@clr-white, 0.2);
+                }
+            }
+        }
+
+    }
+
+    &_form {
+        width: 100%;
+        background: black;
+    }
+}
+
+.editSiteForm {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1rem 0;
+
+    &_textarea,
+    &_input {
+        font-family: 'Source Sans Pro',
+            sans-serif;
+        width: 90%;
+        margin-bottom: 1rem;
+        resize: none;
+        font-size: 1.25rem;
+        color: @clr-white;
+        background: fade(@clr-white, 10%);
+        border: none;
+        border-radius: 3px;
+        padding: 1rem 1rem;
+        border: 1px solid fade(@clr-white, 30%);
+        transition: 250ms width ease-in-out,
+            250ms background ease-in-out;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+
+        &::placeholder {
+            font-size: 1rem;
+            color: white;
+        }
+
+        &:hover {
+            background: fade(@clr-white, 30%);
+        }
+
+        &:focus {
+            color: @clr-dark;
+            background: @clr-white;
+            outline: none;
+            width: 100%;
+        }
+    }
+
+    &_input {
+        text-align: center;
+    }
+
+    &_button {
+        padding: 0.25rem 0.75rem;
+        margin: 0 1rem 1rem;
+        border: 1px solid rgba(@clr-white, .6);
+        background: rgba(@clr-white, 0.1);
+        color: @clr-white;
+        transition: 100ms background ease-in-out;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            background: rgba(@clr-white, 0.3);
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.form_container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login,
+.signup {
+    font-family: 'Source Sans Pro',
+        sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    max-width: 450px;
+    min-width: 300px;
+    width: 50%;
+    margin: auto;
+    padding: 0 1.5rem 1rem;
+    color: @clr-white;
+
+    &_error {
+        position: absolute;
+        top: 1rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        max-width: 450px;
+        min-width: 300px;
+        width: 50%;
+        padding: 0 1.5rem 1rem;
+
+        &_text {
+            width: 90%;
+            margin-bottom: 1rem;
+            background: fade(@clr-3d1, 20%);
+            border: none;
+            border-radius: 3px;
+            padding: 1rem 1rem;
+            border: 1px solid fade(@clr-white, 30%);
+        }
+    }
+
+    &_input,
+    &_button,
+    &_signup,
+    &_login {
+        font-size: 1rem;
+        color: @clr-dark;
+        background: fade(@clr-white, 10%);
+        border: 1px solid fade(@clr-white, 30%);
+        border-radius: 3px;
+        margin: 0.25rem 0;
+        padding: 1rem 1rem;
+    }
+
+    &_input {
+        color: @clr-white;
+        border: 1px solid fade(@clr-white, 30%);
+        text-align: center;
+        width: 90%;
+        transition: 250ms width ease-in-out,
+            250ms background ease-in-out;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+
+        &::placeholder {
+            font-size: 1rem;
+            color: white;
+        }
+
+        &:hover {
+            background: fade(@clr-white, 30%);
+        }
+
+        &:focus {
+            color: @clr-dark;
+            background: @clr-white;
+            outline: none;
+            width: 100%;
+        }
+
+    }
+
+
+    &_button,
+    &_signup,
+    &_login {
+        display: block;
+        width: 90%;
+        cursor: pointer;
+        user-select: none;
+        background: @clr-white;
+    }
+
+    &_signup,
+    &_login {
+        width: 100%;
+
+        &Container {
+            display: block;
+            width: 90%;
+        }
+    }
+}

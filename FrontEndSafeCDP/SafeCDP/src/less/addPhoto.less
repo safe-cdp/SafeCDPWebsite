@@ -1,0 +1,139 @@
+.addPhoto {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(@clr-white, 0.4);
+    color: @clr-dark;
+    cursor: pointer;
+    user-select: none;
+    transition: 100ms transform ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &_icon {
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+}
+
+.composePost {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 0;
+    color: @clr-white;
+    text-align: center;
+
+    &_uploadTitle {
+        width: 100%;
+    }
+
+    &_uploadContainer {
+        width: 100%;
+        border-bottom: 1px solid rgba(@clr-white, 0.1);
+    }
+
+    &_uploadButtons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &_pickFile,
+    &_uploadFile,
+    &_button {
+        padding: 0.25rem 0.75rem;
+        margin: 0 1rem 1rem;
+        border: 1px solid rgba(@clr-white, .6);
+        background: rgba(@clr-white, 0.1);
+        color: @clr-white;
+        transition: 100ms background ease-in-out;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            background: rgba(@clr-white, 0.3);
+        }
+    }
+
+    &_fileName {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    &_picture {
+        width: 100%;
+        max-width: 500px;
+        object-fit: contain;
+    }
+
+    &_input {
+        font-size: 1rem;
+        color: @clr-dark;
+        background: fade(@clr-white, 10%);
+        border: none;
+        border-radius: 3px;
+        margin: 0.25rem 0;
+        padding: 1rem 1rem;
+    }
+
+    &_form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+        max-width: 450px;
+        min-width: 300px;
+        width: 50%;
+        margin: auto;
+        padding: 0 1.5rem 1rem;
+        color: @clr-white;
+    }
+
+    &_input {
+        position: relative;
+        top: -5px;
+        font-family: 'Source Sans Pro',
+            sans-serif;
+        width: 100%;
+        margin-bottom: 1rem;
+        resize: none;
+        font-size: 1.25rem;
+        color: @clr-white;
+        background: fade(@clr-white, 10%);
+        padding: 1rem 1rem;
+        border-radius: 3px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        transition: 250ms width ease-in-out,
+            250ms background ease-in-out;
+
+        &::placeholder {
+            font-size: 1rem;
+            color: white;
+        }
+
+        &:hover {
+            background: fade(@clr-white, 30%);
+        }
+
+        &:focus {
+            color: @clr-dark;
+            background: @clr-white;
+            outline: none;
+            width: 100%;
+        }
+    }
+}

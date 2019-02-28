@@ -1,0 +1,4 @@
+[build]
+base = "SafeCDP/"
+publish = "SafeCDP/build"
+command = "yarn build"
