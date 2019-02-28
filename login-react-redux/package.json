@@ -4,7 +4,7 @@
   "description": "Login with Google and Twitter using React + Redux + Firebase",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jvcjunior/login-react-redux.git"
+    "url": "git+https://github.com/SafeCDPWebsite/login-react-redux.git"
   },
   "keywords": [
     "login",
@@ -22,9 +22,9 @@
   "author": "Valter Jr",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jvcjunior/login-react-redux/issues"
+    "url": "https://github.com/SafeCDPWebsite/login-react-redux/issues"
   },
-  "homepage": "https://github.com/jvcjunior/login-react-redux#readme",
+  "homepage": "https://github.com/SafeCDPWebsite/login-react-redux#readme",
   "dependencies": {
     "babel-polyfill": "~6.13.0",
     "immutable": "~3.8.1",
