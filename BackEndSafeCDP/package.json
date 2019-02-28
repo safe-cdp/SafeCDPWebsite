@@ -7,7 +7,7 @@
     "server": "nodemon",
     "test": "cross-env DB_ENV=testing jest --watch --verbose"
   },
-  "repository": "https://github.com/artfoliobuild/BackEnd",
+  "repository": "https://github.com/SafeCDPWebsite/BackEndSafeCDP",
   "author": "Jorlost19 <39849563+Jorlost19@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
